@@ -4,8 +4,10 @@ body {
   font-family: "DM Sans", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
   background-image: linear-gradient(rgb(0, 0,0, 0.1), rgb(0, 0, 0, 0.1)),
-  url("./Assets/01.jpg");
+  url("./Assets/background.jpg");
+  backdrop-filter: blur(15px);
+  overflow-x: hidden;
   /* background-color: aliceblue; */
 }

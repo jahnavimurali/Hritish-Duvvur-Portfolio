@@ -23,31 +23,6 @@ button:focus {
 }
 
 /* --------- */
-/*  Preloader */
-/* --------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#preloader-none {
-  opacity: 0;
-}
-
-#no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
-/* --------- */
 /*Scrollbar   */
 /* --------- */
 
@@ -144,7 +119,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #2a2d43 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -155,7 +130,7 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
+  height: 2.7em !important;
   width: 2.5em !important;
 }
 
@@ -254,15 +229,6 @@ button:focus {
   padding-top: 80px !important;
 }
 
-.home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-}
 
 .home-content {
   padding: 9rem 0 2rem !important;
@@ -741,3 +707,96 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* ----------
+Experience
+---------- */
+
+.timeline-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.timeline-heading {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  width: 4px;
+  height: 100%;
+  background: #6f42c1;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-icon {
+  width: 60px;
+  height: 60px;
+  background: #6f42c1;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  font-size: 24px;
+}
+
+.timeline-content {
+  margin-left: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.timeline-content h3 {
+  margin: 5px 0;
+  font-size: 1.3em;
+}
+
+.timeline-content h5 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+.timeline-duration {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    left: 0;
+  }
+
+  .timeline-content {
+    margin-left: 70px;
+  }
+}
+
